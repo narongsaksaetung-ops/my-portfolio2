@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- เชื่อมไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">My Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <img src="images/shiba.png" alt="My profile photo" class="profile-image">
+        
+            <h2>About Me</h2>
+            <p>
+                Narongsak Saetung 6714120002 Network engineering and cybersecurity
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <!-- Card 1 -->
+            <div class="card">
+                <h3 class="card-title">Project Name</h3>
+                <p class="card-description">
+                    Brief description of the project and what technologies were used.
+                </p>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    <a href="#" class="btn btn-secondary btn-sm">View Code</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h3 class="card-title">Another Project</h3>
+                <p class="card-description">
+                    คำอธิบายสั้น ๆ ของโปรเจกต์นี้ เช่น เป็นโปรเจกต์สำหรับวิชา Web Development
+                </p>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    <a href="#" class="btn btn-secondary btn-sm">View Code</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="container">
+        <p>© 2025 My Portfolio</p>
+    </footer>
+
+</body>
+</html>
